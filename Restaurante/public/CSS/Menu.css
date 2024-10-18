@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Barra de navegação fixa */
+.navbar {
+    background-color: #b22222;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 80px; /* Espaço para a navbar */
+}
+
+header .logo {
+    max-width: 200px; /* Aumentado */
+    margin-bottom: 20px;
+}
+
+/* Formulário de reservas */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+form button {
+    background-color: #b22222;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a52a2a;
+}
+
+/* Estilos gerais da seção de reserva */
+#reservation {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Container para o formulário */
+.reservation-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando os grupos de campos */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilos ao focar nos campos */
+input:focus {
+    border-color: #b22222;
+    outline: none;
+    box-shadow: 0 0 8px rgba(178, 34, 34, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #b22222;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Animação do botão ao passar o mouse */
+button[type="submit"]:hover {
+    background-color: #a52a2a;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Redes Sociais */
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Seções */
+h2 {
+    color: #b22222;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #b22222;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #b22222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a52a2a;
+}
+
+/* Mapa */
+#map iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem entre seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.testimonial {
+    display: flex; /* Flexbox para alinhar imagem e texto */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 20px; /* Espaçamento entre depoimentos */
+}
+
+.testimonial-img {
+    width: 50px; /* Largura da imagem do usuário */
+    height: 50px; /* Altura da imagem do usuário */
+    border-radius: 50%; /* Bordas arredondadas para a imagem */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+    object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
+}
+
+blockquote {
+    font-style: italic; /* Estilo itálico para citações */
+    margin: 0; /* Remove margem padrão */
+}
+
+cite {
+    display: block; /* Cita em uma nova linha */
+    text-align: right; /* Alinha à direita */
+    color: #666; /* Cor do texto para o nome */
+    margin-top: 10px; /* Espaçamento acima do nome */
+}
+
+.stars {
+    color: gold; /* Cor das estrelas */
+    margin-left: 10px; /* Espaçamento à esquerda das estrelas */
+}
+
+
