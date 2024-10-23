@@ -58,7 +58,7 @@
                 </div>
                 <br>
                 <br>
-                <a href="#full-menu" class="btn">Ver Cardápio Completo</a>
+                <a href="/Cardapio" class="btn">Ver Cardápio Completo</a>
             </section>
 
             <section id="hours">
