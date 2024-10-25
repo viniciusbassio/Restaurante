@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="{{ asset('css/Produtos.css') }}">
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo do Restaurante" class="logo">
+        <img src="/img/logo.png" alt="Logo do Restaurante" class="logo">
         <h1>Cadastro de Produtos</h1>
-        <form>
+        <form action="/produtos/cadastrar" method="get">
             <div class="input-group">
                 <label for="nome_produto">Nome do Produto:</label>
                 <input type="text" id="nome_produto" name="nome_produto" required>

@@ -26,14 +26,25 @@ Route::get('/Menu', function () {
 Route::get('/Cardapio', function () {
     $produtos = new Produtos();
     $produtos = $produtos->listarProdutos();
-    return view('pratos',["listaProdutos"=>$produtos]);
+    return view('Cardapio',["listaProdutos"=>$produtos]);
 });
 
 Route::get('/produtos/cadastrar', function (Request $request) {
     $produtos = new Produtos();   
-    $produtos->nomeProduto = $request->formNomeProduto;
-    $produtos->gravar($request->formNomeProduto,$request->formFornecedorProduto);
-    
-    return view('produtos',["dado"=> $request->formNomeProduto]);
+    $produtos->nomeProduto = $request->nome_produto;
+    $produtos->gravar($request->nome_produto,$request->descricao_produto,);
+    $produtos = $produtos->listarProdutos();
+    return view('Cardapio',["listaProdutos"=>$produtos]);
     
     });
+
+Route::get('/Registro_Fornecedor', function () {
+    $produtos = new Produtos();
+    $produtos = $produtos->listarProdutos();
+    return view('Registro_Fornecedor',["listaProdutos"=>$produtos]);
+});
+
+
+Route::get('/Cadatrar_Produtos', function () {
+    return view('Cadatrar_Produtos');
+});

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace app\Models;
 
-use illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
 class Produtos
@@ -17,7 +17,8 @@ class Produtos
         $listaProdutosDoBanco = DB::select('select * from produtos order by cod_produto DESC');
         return $listaProdutosDoBanco;
     }
-    public function gravar($nmProduto,$Desc_produto){
-        DB::insert('insert into produtos (nome_produto,descricao_produto) values (?,?)', [$nmProduto,$Desc_produto]);
+    public function gravar($nmProduto, $Desc_produto)
+    {
+        DB::insert('insert into produtos (nome_produto,descricao_produto) values (?,?)', [$nmProduto, $Desc_produto]);
     }
 }

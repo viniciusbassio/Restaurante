@@ -14,7 +14,7 @@
                 <li><a href="#menu-highlights">Cardápio</a></li>
                 <li><a href="#hours">Horário</a></li>
                 <li><a href="#contact">Contato</a></li>
-                <li><a href="#reservation">Reservas</a></li>
+                <li><a href="/Cadatrar_Produtos">Cadastrar Produtos</a></li>
             </ul>
         </nav>
     </header>
