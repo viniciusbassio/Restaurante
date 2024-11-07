@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('fundo.jpg'); 
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #b22222;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h2 {
+    color: #006400;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-floating {
+    background-color: #b22222;
+}
+
+.btn-floating:hover {
+    background-color: #a52a2a;
+}
