@@ -10,8 +10,8 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#menu-highlights">Cardápio</a></li>
+                <li><a href="/Menu">Início</a></li>
+                <li><a href="/Cardapio">Cardápio</a></li>
                 <li><a href="#hours">Horário</a></li>
                 <li><a href="#contact">Contato</a></li>
                 <li><a href="/Cadatrar_Produtos">Cadastrar Produtos</a></li>

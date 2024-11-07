@@ -35,13 +35,12 @@ Route::get('/produtos/cadastrar', function (Request $request) {
     $produtos->gravar($request->nome_produto,$request->descricao_produto,);
     $produtos = $produtos->listarProdutos();
     return view('Cardapio',["listaProdutos"=>$produtos]);
-    
     });
 
-Route::get('/Registro_Fornecedor', function () {
+Route::get('/fornecedores/cadastrar', function () {
     $produtos = new Produtos();
     $produtos = $produtos->listarProdutos();
-    return view('Registro_Fornecedor',["listaProdutos"=>$produtos]);
+    return view('cadastro_de_fornecedores',["listaProdutos"=>$produtos]);
 });
 
 

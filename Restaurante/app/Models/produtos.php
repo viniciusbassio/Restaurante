@@ -21,4 +21,8 @@ class Produtos
     {
         DB::insert('insert into produtos (nome_produto,descricao_produto) values (?,?)', [$nmProduto, $Desc_produto]);
     }
+    public function deletar($nomeProduto){
+        db::delete('delete from produtos where nome_produto like Concat(''%'', ?',[$nomeProduto]);
+    }
 }
+?>
