@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/Cadastro_de_produtos.css') }}">
 </head>
 <body>
+    <div class="navbar">
+        <nav>
+        <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/Cardapio">Cardápio</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Estoque</a></li>
+                <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="container">
-        <img src="/img/logo.png" alt="Logo do Restaurante" class="logo">
         <h1>Cadastro de Produtos</h1>
-        <form action="/produtos/cadastrar" method="get">
-            <div class="input-group">
-                <label for="nome_produto">Nome do Produto:</label>
-                <input type="text" id="nome_produto" name="nome_produto" required>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" required>
             </div>
-
-            <div class="input-group">
-                <label for="descricao_produto">Descrição:</label>
-                <textarea id="descricao_produto" name="descricao_produto" rows="3" required></textarea>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao">
             </div>
-
-            <div class="input-group">
-                <label for="preco_produto">Preço (R$):</label>
-                <input type="number" id="preco_produto" name="preco_produto" required step="0.01">
+            <div class="form-group">
+                <label for="preco">Preço (R$):</label>
+                <input type="number" id="preco" name="preco" step="0.01" required>
             </div>
-
-            <div class="input-group">
-                <label for="categoria_produto">Categoria:</label>
-                <select id="categoria_produto" name="categoria_produto" required>
-                    <option value="entrada">Entrada</option>
-                    <option value="prato_principal">Prato Principal</option>
-                    <option value="sobremesa">Sobremesa</option>
-                    <option value="bebida">Bebida</option>
-                </select>
+            <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria">
             </div>
-
-            <button type="submit">Cadastrar Produto</button>
+            <div class="form-group">
+                <button type="submit">Cadastrar Produto</button>
+            </div>
         </form>
     </div>
 </body>

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fornecedores{
     public $cod_fornec;
-    public $Nome_Fornecedores;
+    public $Nome_Fornecedor;
     public $Cnpj;
     public $Endereco;
     public $Telefone;

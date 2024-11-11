@@ -11,7 +11,7 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="/Menu">Início</a></li>
+                <li><a href="/">Início</a></li>
                 <li><a href="#">Cardápio</a></li>
                 <li><a href="#">Reservas</a></li>
                 <li><a href="#">Cadastro de Fornecedores</a></li>
@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <h1>Cadastro de Fornecedores</h1>
-        <form>
+        <form method="get" action="/fornecedores/cadastrar">
             <div class="form-group">
                 <label for="nome-fornecedor">Nome da Empresa:</label>
                 <input type="text" id="nome-fornecedor" name="nome-fornecedor" required>
