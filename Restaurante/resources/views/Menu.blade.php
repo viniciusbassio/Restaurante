@@ -12,9 +12,9 @@
             <ul>
             <li><a href="/">Início</a></li>
                 <li><a href="/Cardapio">Cardápio</a></li>
-                <li><a href="#">Pedidos</a></li>
-                <li><a href="#">Estoque</a></li>
+                <li><a href="/Cadastrar/Pedidos">Pedidos</a></li>
                 <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+                <li><a href="/Relatorios">Relatorio</a></li>
             </ul>
         </nav>
     </header>

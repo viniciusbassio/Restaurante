@@ -11,11 +11,11 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Cadastro de Fornecedores</a></li>
-                <li><a href="#">Contato</a></li>
+            <li><a href="/">Início</a></li>
+                <li><a href="/Cardapio">Cardápio</a></li>
+                <li><a href="/Cadastrar/Pedidos">Pedidos</a></li>
+                <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+                <li><a href="/Relatorios">Relatorio</a></li>
             </ul>
         </nav>
     </div>
@@ -23,8 +23,8 @@
         <h1>Cadastro de Fornecedores</h1>
         <form method="get" action="/fornecedores/cadastrar">
             <div class="form-group">
-                <label for="nome-fornecedor">Nome da Empresa:</label>
-                <input type="text" id="nome-fornecedor" name="nome-fornecedor" required>
+                <label for="nome_fornecedor">Nome da Empresa:</label>
+                <input type="text" id="nome_fornecedor" name="nome_fornecedor" required>
             </div>
             <div class="form-group">
                 <label for="cnpj">CNPJ:</label>
