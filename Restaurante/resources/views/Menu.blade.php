@@ -10,11 +10,11 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li><a href="/Menu">Início</a></li>
+            <li><a href="/">Início</a></li>
                 <li><a href="/Cardapio">Cardápio</a></li>
-                <li><a href="#hours">Horário</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="/Cadatrar_Produtos">Cadastrar Produtos</a></li>
+                <li><a href="/Cadastrar/Pedidos">Pedidos</a></li>
+                <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+                <li><a href="/Relatorios">Relatorio</a></li>
             </ul>
         </nav>
     </header>

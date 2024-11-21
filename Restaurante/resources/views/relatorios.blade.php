@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="relatorios_css.css">
+    <link rel="stylesheet" href="{{ asset('css/relatorios.css') }}">
 </head>
 <body>
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Cardápio</a></li>
+            <li><a href="/">Início</a></li>
+                <li><a href="/Cardapio">Cardápio</a></li>
                 <li><a href="#">Reservas</a></li>
-                <li><a href="#">Relatórios</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#">Estoque</a></li>
+                <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+                <li><a href="/Relatorios">Relatorio</a></li>
             </ul>
         </nav>
     </div>

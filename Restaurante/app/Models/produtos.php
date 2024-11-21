@@ -17,12 +17,9 @@ class Produtos
         $listaProdutosDoBanco = DB::select('select * from produtos order by cod_produto DESC');
         return $listaProdutosDoBanco;
     }
-    public function gravar($nmProduto, $Desc_produto)
+    public function gravar($nomeProduto, $Desc_produto)
     {
-        DB::insert('insert into produtos (nome_produto,descricao_produto) values (?,?)', [$nmProduto, $Desc_produto]);
-    }
-    public function deletar($nomeProduto){
-        db::delete('delete from produtos where nome_produto like Concat(''%'', ?',[$nomeProduto]);
+        DB::insert('insert into produtos (nome_produto,descricao_produto) values (?,?)', [$nomeProduto, $Desc_produto]);
     }
 }
 ?>
