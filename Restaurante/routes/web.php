@@ -29,6 +29,7 @@ Route::get('/Cardapio', function () {
     return view('Cardapio',["listaProdutos"=>$produtos]);
 });
 
+//Rota para tela de cadastrar produtos
 Route::get('/produtos/cadastrar', function (Request $request) {
     $produtos = new Produtos();   
     $produtos->nomeProduto = $request->nome_produto;
@@ -37,11 +38,15 @@ Route::get('/produtos/cadastrar', function (Request $request) {
     return view('Cardapio',["listaProdutos"=>$produtos]);
     });
 
-Route::get('/fornecedores/cadastrar', function () {
-    $produtos = new Produtos();
-    $produtos = $produtos->listarProdutos();
-    return view('cadastro_de_fornecedores',["listaProdutos"=>$produtos]);
+//Rota para tela de cadastrar fornecedores 
+Route::get('/fornecedores/cadastrar', function (Request $request) {
+    $fornecedores = new Fornecedores();
+    $fornecedores->Nome_Fornecedor = $request->nome_fornecedor;
+    $fornecedores->GravaForn($request->nome_fornecedor,$request->Cnpj,$request->Endereco,$request->Telefone);
+    $fornecedores = $fornecedores->ListarFornecedores();
+    return view('Menu');
 });
+
 
 
 Route::get('/Cadatrar_Produtos', function () {
