@@ -11,12 +11,13 @@
     <div class="navbar">
         <nav>
             <ul>
-            <li><a href="/">Início</a></li>
+            <ul>
+                <li><a href="/">Início</a></li>
                 <li><a href="/Cardapio">Cardápio</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Estoque</a></li>
-                <li><a href="/fornecedores/cadastrar">Fornecedor</a></li>
+                <li><a href="/Cadastrar/Pedidos">Pedidos</a></li>
+                <li><a href="/fornecedores">Fornecedores </a></li>
                 <li><a href="/Relatorios">Relatorio</a></li>
+                <li><a href="/Cadatrar_Produtos">Produtos</a></li>
             </ul>
         </nav>
     </div>
