@@ -2,6 +2,7 @@
 
 use App\Models\Fornecedores;
 use App\Models\Produtos;
+use App\Models\Pedidos;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -52,8 +53,25 @@ Route::get('/fornecedores/cadastrar', function (Request $request) {
 Route::get('/Cadatrar_Produtos', function () {
     return view('Cadatrar_Produtos');
 });
-Route::get('/Cadastrar/Pedidos',function(){
-    return view('Pedidos');
+Route::get('/Pedidos', function () {
+    $pedidos = new Pedidos();
+    $listarPratos = $pedidos->ListarPratos(); // Captura os pratos retornados pelo método
+    return view('Pedidos', ["ListarPratos" => $listarPratos]); // Passa apenas os dados para a view
+});
+
+Route::get('/Cadastrar/pedidos', function (Request $request) {
+    $pedido = new Pedidos();
+
+    // Dados do pedido
+    $Nome_Cliente = $request->input('Nome_Cliente');
+    $Telefone = $request->input('Telefone');
+    $Endereco = $request->input('Endereco');
+    $Quantidade = $request->input('Quantidade');
+
+    // Chamando o método de gravação
+    $resultado = $pedido->GravaPedidos($Nome_Cliente, $Telefone, $Endereco, $Quantidade);
+
+    return view('Pedidos')->with('message', $resultado);
 });
 
 Route::get('/Relatorios',function(){

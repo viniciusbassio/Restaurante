@@ -14,7 +14,7 @@ class Produtos
 
     public function listarProdutos()
     { /*Importar em view de produtos para pegar os dados do banco na montagem do cardapio*/
-        $listaProdutosDoBanco = DB::select('select * from produtos order by cod_produto DESC');
+        $listaProdutosDoBanco = DB::select('select * from produtos order by cod_produto ASC');
         return $listaProdutosDoBanco;
     }
     public function gravar($nomeProduto, $Desc_produto)
